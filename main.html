@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Proper document title -->
+	<title>Lohith Elaka | Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<!-- Navigation: nav tag bound to the navigation role -->
+	<nav role="navigation" aria-label="Main navigation">
+		<!-- ul bound to list, li bound to listitem -->
+		<ul role="list" class="nav-list">
+			<li role="listitem"><a href="#about">About</a></li>
+			<li role="listitem"><a href="#skills">Skills</a></li>
+			<li role="listitem"><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
+	<!-- Heading: h1 bound to the heading role -->
+	<h1 role="heading" aria-level="1">Lohith Elaka - Portfolio</h1>
+
+	<!-- Image: img bound to the img role, alt attribute included -->
+	<img role="img"
+	     src="profile.jpg"
+	     alt="Portrait of Lohith Elaka, a data and AI developer"
+	     width="200"
+	     height="200">
+
+	<!-- Brief description -->
+	<p id="about">
+		I am a Computer Science graduate and AI full stack developer skilled in
+		data analysis, data engineering, and Python development. I build clean,
+		accessible, and results-driven applications.
+	</p>
+
+	<!-- Skills list: ul = list, li = listitem (3+ items) -->
+	<ul role="list" id="skills" aria-label="Key skills">
+		<li role="listitem">Python and SQL</li>
+		<li role="listitem">Data Analysis and Visualization</li>
+		<li role="listitem">Full Stack Web Development</li>
+		<li role="listitem">AI and Machine Learning</li>
+	</ul>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
